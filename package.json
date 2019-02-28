@@ -4,6 +4,7 @@
   "description": "Less tracking, more tasking.",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/carloferrer/fast_tracker/issues"
   },
-  "homepage": "https://github.com/carloferrer/fast_tracker#proposal"
+  "homepage": "https://github.com/carloferrer/fast_tracker#proposal",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
