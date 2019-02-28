@@ -1,0 +1,23 @@
+{
+  "name": "fast_tracker",
+  "version": "1.0.0",
+  "description": "Less tracking, more tasking.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloferrer/fast_tracker.git"
+  },
+  "keywords": [
+    "cli",
+    "restful"
+  ],
+  "author": "Carlo Ferrer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carloferrer/fast_tracker/issues"
+  },
+  "homepage": "https://github.com/carloferrer/fast_tracker#proposal"
+}
