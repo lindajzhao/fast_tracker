@@ -4,7 +4,7 @@
   "description": "Less tracking, more tasking.",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
+    "start": "nodemon --exec babel-node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +23,12 @@
   "homepage": "https://github.com/carloferrer/fast_tracker#proposal",
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
+    "nodemon": "^1.18.10"
   }
 }
