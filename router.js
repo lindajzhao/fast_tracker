@@ -1,10 +1,10 @@
 import { Router } from 'express';
 
-const router = Router();
+const Router = Router();
 
-router.get('/', (req, res) => res.json({
+Router.get('/', (req, res) => res.json({
 	status: 'API working',
 	message: 'Welcome to fast_tracker',
 }));
 
-module.exports = router;
+export default Router;
