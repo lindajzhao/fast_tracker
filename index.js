@@ -1,7 +1,7 @@
 import bodyParser from 'body-parser';
 import express from 'express';
 import mongoose from 'mongoose';
-import Router from './router';
+import router from './router';
 
 const app = express();
 
@@ -10,7 +10,6 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => res.send('Hello world.'));
 
-const router = Router;
 app.use('/api', router);
 
 mongoose.connect('mongodb://localhost/fast_tracker');
