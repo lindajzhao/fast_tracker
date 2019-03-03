@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/carloferrer/fast_tracker#proposal",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.16"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
