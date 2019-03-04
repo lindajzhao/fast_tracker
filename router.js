@@ -9,6 +9,7 @@ router.get('/', (req, res) => res.json({
 }));
 
 router.route('/item')
+  .get(controller.read)
   .post(controller.create);
 
 export default router;
