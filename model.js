@@ -7,10 +7,10 @@ const date = now.slice(0, 10);
 const timestamp = now.slice(10);
 
 const schema = mongoose.Schema({
-  index: {
-    type: Number,
-    required: true
-  },
+  // index: {
+  //   type: Number,
+  //   required: true
+  // },
   date: {
     type: String,
     required: true,
@@ -31,6 +31,6 @@ const schema = mongoose.Schema({
   }
 });
 
-const LineItem = mongoose.model('line-item', schema);
+const lineItem = mongoose.model('line-item', schema);
 
-export default LineItem;
+export default lineItem;
