@@ -33,4 +33,8 @@ const schema = mongoose.Schema({
 
 const lineItem = mongoose.model('line-item', schema);
 
+lineItem.get = (cb, limit) => {
+  lineItem.find(cb).limit(limit);
+};
+
 export default lineItem;

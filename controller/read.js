@@ -1,7 +1,6 @@
 import lineItem from '../model';
 
 function readLine(req, res) {
-  console.log('readline');
   // Just reads all lines for now.
   lineItem.get((err, items) => {
     if (err) {
