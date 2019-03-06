@@ -1,7 +1,7 @@
 import bodyParser from 'body-parser';
 import express from 'express';
 import mongoose from 'mongoose';
-import router from './router';
+import router from './src/router';
 
 const app = express();
 
