@@ -17,6 +17,10 @@ A WIP project; see [PROPOSAL.md](PROPOSAL.md) for more information.
 - `yarn serve` to "spin up" database.
 - `yarn start` to run server script.
 
+# Testing the Project
+- `yarn test:list` to print table JSON.
+- `yarn test:add` to add arbitrary item.
+
 ## Stack
 - mongoDB
 - Express
