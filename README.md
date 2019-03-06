@@ -1,5 +1,5 @@
 # fast_tracker
-A WIP project; see [PROPOSAL.md](PROPOSAL.md) for more information.
+A WIP project; see [PROPOSAL.md](./docs/PROPOSAL.md) for more information.
 
 ## Repo Setup
 - Clone this repository.
