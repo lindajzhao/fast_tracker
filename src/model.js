@@ -1,10 +1,14 @@
 import mongoose from 'mongoose';
 
-// index | date | timestamp | task | detail
+/*
+** Schema:
+** index | date | timestamp | task | detail
+*/
 
-const now = (new Date()).toISOString();
+// This will need to change if in a different timezone.
+const now = new Date().toLocaleString('en-CA', { timeZone: 'America/New_York' });
 const date = now.slice(0, 10);
-const timestamp = now.slice(10);
+const timestamp = now.slice(12);
 
 const schema = mongoose.Schema({
   // index: {
