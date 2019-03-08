@@ -8,8 +8,7 @@ A tool for keeping track of your day, utilised via the command line.  This is a 
 
 ## DB Setup
 - To install mongoDB on macOS...
-  - `brew tap mongodb/brew`
-  - `brew install mongodb-community@4.0`
+  - `brew tap mongodb/brew && brew install mongodb-community@4.0`
 
 ## Running the Project
 - In one terminal window, `yarn serve` to initialise and "spin up" database.
