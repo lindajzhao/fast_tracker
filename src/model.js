@@ -1,41 +1,31 @@
 import mongoose from 'mongoose';
+import now from './utils/now';
 
 /*
 ** Schema:
 ** index | date | timestamp | task | detail
 */
 
-const nowRaw = new Date();
-const now = {
-  YYYY: nowRaw.getFullYear(),
-  MM: nowRaw.getMonth() + 1,
-  DD: nowRaw.getDate(),
-  hh: nowRaw.getHours(),
-  mm: nowRaw.getMinutes(),
-  ss: nowRaw.getSeconds(),
-};
-const date = `${now.YYYY}-${now.MM}-${now.DD}`;
-const time = `${now.hh}:${now.mm}:${now.ss}`;
-
+const present = now();
 
 const schema = mongoose.Schema({
   date: {
     type: String,
     required: true,
-    default: date
+    default: present.date,
   },
   time: {
     type: String,
     required: true,
-    default: time
+    default: present.time,
   },
   task: {
     type: String,
-    required: true
+    required: true,
   },
   detail: {
     type: String,
-    required: false
+    required: false,
   }
 });
 
