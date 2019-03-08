@@ -5,25 +5,29 @@ import mongoose from 'mongoose';
 ** index | date | timestamp | task | detail
 */
 
-// This will need to change if in a different timezone.
-const now = new Date().toLocaleString('en-CA', { timeZone: 'America/New_York' });
-const date = now.slice(0, 10);
-const timestamp = now.slice(12);
+const nowRaw = new Date();
+const now = {
+  YYYY: nowRaw.getFullYear(),
+  MM: nowRaw.getMonth() + 1,
+  DD: nowRaw.getDate(),
+  hh: nowRaw.getHours(),
+  mm: nowRaw.getMinutes(),
+  ss: nowRaw.getSeconds(),
+};
+const date = `${now.YYYY}-${now.MM}-${now.DD}`;
+const time = `${now.hh}:${now.mm}:${now.ss}`;
+
 
 const schema = mongoose.Schema({
-  // index: {
-  //   type: Number,
-  //   required: true
-  // },
   date: {
     type: String,
     required: true,
     default: date
   },
-  timestamp: {
+  time: {
     type: String,
     required: true,
-    default: timestamp
+    default: time
   },
   task: {
     type: String,
